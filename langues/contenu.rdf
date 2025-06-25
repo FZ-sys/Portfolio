@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF 
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:schema="http://schema.org/"
+  xmlns:dct="http://purl.org/dc/terms/">
+
+  <rdf:Description rdf:about="contenu.rdf">
+    <dct:source rdf:resource="contenu.xml"/>
+  </rdf:Description>
+
+  <foaf:Person rdf:about="#fatimazahra">
+    <foaf:name>Fatimazahra EL YOUNOUSSI</foaf:name>
+    <foaf:mbox>mailto:fz.elyounoussi@gmail.com</foaf:mbox>
+    <schema:addressLocality>Paris, France</schema:addressLocality>
+    <schema:description>Développeuse full-stack chez Dassault Systèmes et étudiante à Sup Galilée</schema:description>
+    <schema:hasSkill>
+      <rdf:Bag>
+        <rdf:li>HTML</rdf:li>
+        <rdf:li>CSS</rdf:li>
+        <rdf:li>C++</rdf:li>
+        <rdf:li>Haskell</rdf:li>
+        <rdf:li>C</rdf:li>
+        <rdf:li>Python</rdf:li>
+        <rdf:li>JavaScript</rdf:li>
+        <rdf:li>PHP</rdf:li>
+        <rdf:li>MySQL</rdf:li>
+        <rdf:li>Cisco</rdf:li>
+        <rdf:li>Java</rdf:li>
+        <rdf:li>UML</rdf:li>
+      </rdf:Bag>
+    </schema:hasSkill>
+    <schema:contactPoint rdf:resource="#contact" />
+    <schema:creator rdf:resource="#cinetica" />
+    <schema:hasOccupation rdf:resource="#passions" />
+  </foaf:Person>
+
+  <schema:CreativeWork rdf:about="#cinetica">
+    <schema:name>Cinetica 🎬</schema:name>
+    <schema:description>Application web de découverte de films et de séries via une API REST (JSON).</schema:description>
+    <schema:programmingLanguage>TypeScript</schema:programmingLanguage>
+    <schema:programmingLanguage>Node.js</schema:programmingLanguage>
+    <schema:programmingLanguage>REST API</schema:programmingLanguage>
+    <schema:programmingLanguage>JSON</schema:programmingLanguage>
+  </schema:CreativeWork>
+
+  <schema:ContactPoint rdf:about="#contact">
+    <schema:contactType>email</schema:contactType>
+    <schema:email>mailto:fz.elyounoussi@gmail.com</schema:email>
+  </schema:ContactPoint>
+
+  <rdf:Description rdf:about="#passions">
+    <rdf:type rdf:resource="schema:ItemList"/>
+    <schema:name>Passions de Fatimazahra</schema:name>
+    <schema:itemListElement rdf:resource="#yoga"/>
+    <schema:itemListElement rdf:resource="#matcha"/>
+    <schema:itemListElement rdf:resource="#books"/>
+    <schema:itemListElement rdf:resource="#insta"/>
+    <schema:itemListElement rdf:resource="#travel"/>
+  </rdf:Description>
+
+  <!-- Passion: Yoga -->
+  <rdf:Description rdf:about="#yoga">
+    <rdf:type rdf:resource="schema:ExerciseAction"/>
+    <schema:name xml:lang="fr">Yoga</schema:name>
+    <schema:name xml:lang="en">Yoga</schema:name>
+    <schema:name xml:lang="ar">اليوغا</schema:name>
+    <schema:description xml:lang="fr">Activité qui m’aide à me concentrer et à me dépasser.</schema:description>
+    <schema:description xml:lang="en">Activity that helps me focus and push myself.</schema:description>
+    <schema:description xml:lang="ar">نشاط يساعدني على التركيز والتطور.</schema:description>
+  </rdf:Description>
+
+  <!-- Passion: Matcha -->
+  <rdf:Description rdf:about="#matcha">
+    <rdf:type rdf:resource="schema:Product"/>
+    <schema:name xml:lang="fr">Matcha</schema:name>
+    <schema:name xml:lang="en">Matcha</schema:name>
+    <schema:name xml:lang="ar">ماتشا</schema:name>
+    <schema:description xml:lang="fr">Boisson quotidienne et rituel personnel.</schema:description>
+    <schema:description xml:lang="en">Daily drink and personal ritual.</schema:description>
+    <schema:description xml:lang="ar">مشروب يومي وطقس شخصي.</schema:description>
+  </rdf:Description>
+
+  <!-- Passion: Lecture -->
+  <rdf:Description rdf:about="#books">
+    <rdf:type rdf:resource="schema:CreativeWork"/>
+    <schema:name xml:lang="fr">Lecture</schema:name>
+    <schema:name xml:lang="en">Reading</schema:name>
+    <schema:name xml:lang="ar">القراءة</schema:name>
+    <schema:description xml:lang="fr">Romans, essais, et true crime comme 'The Fear'.</schema:description>
+    <schema:description xml:lang="en">Novels, essays, and true crime like 'The Fear'.</schema:description>
+    <schema:description xml:lang="ar">روايات، مقالات، وجريمة حقيقية مثل "The Fear".</schema:description>
+  </rdf:Description>
+
+  <!-- Passion: Réseaux sociaux -->
+  <rdf:Description rdf:about="#insta">
+    <rdf:type rdf:resource="schema:SocialMediaPosting"/>
+    <schema:name xml:lang="fr">Réseaux sociaux</schema:name>
+    <schema:name xml:lang="en">Social Media</schema:name>
+    <schema:name xml:lang="ar">وسائل التواصل</schema:name>
+    <schema:description xml:lang="fr">Je partage des instants sur Instagram et TikTok.</schema:description>
+    <schema:description xml:lang="en">I share moments on Instagram and TikTok.</schema:description>
+    <schema:description xml:lang="ar">أشارك لحظاتي على إنستغرام وتيك توك.</schema:description>
+  </rdf:Description>
+
+  <!-- Passion: Voyages -->
+  <rdf:Description rdf:about="#travel">
+    <rdf:type rdf:resource="schema:Place"/>
+    <schema:name xml:lang="fr">Voyages</schema:name>
+    <schema:name xml:lang="en">Travels</schema:name>
+    <schema:name xml:lang="ar">السفر</schema:name>
+    <schema:description xml:lang="fr">Canada, Italie, Allemagne, Espagne, Turquie, Royaume-Uni, Pays-Bas.</schema:description>
+    <schema:description xml:lang="en">Canada, Italy, Germany, Spain, Turkey, UK, Netherlands.</schema:description>
+    <schema:description xml:lang="ar">كندا، إيطاليا، ألمانيا، إسبانيا، تركيا، المملكة المتحدة، هولندا.</schema:description>
+  </rdf:Description>
+
+</rdf:RDF>

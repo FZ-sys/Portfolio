@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+  <xs:element name="portfolio">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="profil" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="nom" type="xs:string"/>
+              <xs:element name="ville" type="xs:string"/>
+              <xs:element name="email" type="xs:string"/>
+              <xs:element name="presentation" type="xs:string"/>
+              <xs:element name="competences">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="competence" type="xs:string" maxOccurs="unbounded"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="passions">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="passion" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute name="id" type="xs:string" use="required"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="projets">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="projet" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="titre" type="xs:string"/>
+                          <xs:element name="description" type="xs:string"/>
+                          <xs:element name="technos" type="xs:string"/>
+                          <xs:element name="images">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="img" type="xs:string" maxOccurs="unbounded"/>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="id" type="xs:string" use="required"/>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="contact">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="titre" type="xs:string"/>
+                    <xs:element name="labels">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="nom" type="xs:string"/>
+                          <xs:element name="email" type="xs:string"/>
+                          <xs:element name="message" type="xs:string"/>
+                          <xs:element name="envoyer" type="xs:string"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="confirmation" type="xs:string"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="apropos">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="titre" type="xs:string"/>
+                    <xs:element name="paragraphes">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="p" maxOccurs="unbounded">
+                            <xs:complexType mixed="true">
+                              <xs:sequence minOccurs="0" maxOccurs="unbounded">
+                                <xs:any processContents="lax"/>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="titreSparql" type="xs:string"/>
+                    <xs:element name="lienRdf" type="xs:string"/>
+                    <xs:element name="texteSparql">
+                      <xs:complexType mixed="true">
+                        <xs:sequence minOccurs="0" maxOccurs="unbounded">
+                          <xs:any processContents="lax"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="lienSparql" type="xs:string"/>
+                    <xs:element name="titreXslt" type="xs:string"/>
+                    <xs:element name="texteXslt">
+                      <xs:complexType mixed="true">
+                        <xs:sequence minOccurs="0" maxOccurs="unbounded">
+                          <xs:any processContents="lax"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="lienXslt" type="xs:string"/>
+                    <xs:element name="titreXsd" type="xs:string"/>
+                    <xs:element name="texteXsd">
+                      <xs:complexType mixed="true">
+                        <xs:sequence minOccurs="0" maxOccurs="unbounded">
+                          <xs:any processContents="lax"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="lang" type="xs:string" use="required"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:anyAttribute processContents="lax"/>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>

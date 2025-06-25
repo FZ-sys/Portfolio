@@ -1,0 +1,233 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type="text/xsl" href="contenu.xslt"?>
+
+
+<portfolio xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           rdf:about="contenu.xml"
+           rdf:seeAlso="contenu.rdf"
+           xsi:noNamespaceSchemaLocation="contenu.xsd">
+  <profil lang="fr">
+    <nom>EL YOUNOUSSI Fatimazahra</nom>
+    <ville>Paris, France</ville>
+    <email>fz.elyounoussi@gmail.com</email>
+    <presentation>Je m'appelle EL YOUNOUSSI Fatimazahra, je suis actuellement apprentie en deuxième année d'école d'ingénieur à Sup Galilée, et développeuse full-stack chez Dassault Systèmes depuis un an. Avant cela, j'ai effectué une classe préparatoire MP (Maths-Physique)...</presentation>
+
+    <competences>
+      <competence>HTML</competence>
+      <competence>CSS</competence>
+      <competence>C++</competence>
+      <competence>Haskell</competence>
+      <competence>C</competence>
+      <competence>Python</competence>
+      <competence>JavaScript</competence>
+      <competence>PHP</competence>
+      <competence>MySQL</competence>
+      <competence>Cisco</competence>
+      <competence>Java</competence>
+      <competence>UML</competence>
+    </competences>
+
+    <passions>
+      <passion id="insta">Je poste des moments de ma vie et des instants mignons sur les réseaux sociaux comme Instagram et TikTok.</passion>
+      <passion id="matcha">Le matcha est une boisson que je consomme tous les jours. C’est plus qu’une boisson, c’est un rituel pour moi.</passion>
+      <passion id="books">Je lis de tout, des romans aux essais, et je suis particulièrement attirée par le true crime comme la série 'The Fear'.</passion>
+      <passion id="travel">J’ai visité le Canada, l’Italie, l’Allemagne, l’Espagne, la Turquie, le Royaume-Uni et les Pays-Bas.</passion>
+      <passion id="yoga">Je pratique le yoga. C’est une activité qui m’aide à me concentrer et à me dépasser.</passion>
+    </passions>
+
+    <projets>
+      <projet id="cinetica">
+        <titre>Cinetica 🎬</titre>
+        <description>Cinetica est une application web de découverte de films et de séries. Elle permet d'afficher dynamiquement les castings, les affiches, les descriptions, les dates de sortie, etc. Les données sont récupérées en JSON via une API REST. J'ai utilisé TypeScript, Node.js et les outils modernes du front-end.</description>
+        <technos>TypeScript, Node.js, REST API, JSON</technos>
+        <images>
+          <img>images/login.png</img>
+          <img>images/discoverPage.png</img>
+          <img>images/detailsPage.png</img>
+        </images>
+      </projet>
+    </projets>
+
+    <contact>
+      <titre>Me contacter</titre>
+      <labels>
+        <nom>Nom</nom>
+        <email>Email</email>
+        <message>Message</message>
+        <envoyer>Envoyer</envoyer>
+      </labels>
+      <confirmation>Merci {nom}, votre message a bien été envoyé !</confirmation>
+    </contact>
+
+    <apropos>
+      <titre>À propos de ce site</titre>
+      <paragraphes>
+        <p>Ce portfolio a été réalisé en HTML5, CSS3 et PHP, avec l’utilisation de XML pour stocker les contenus multilingues.</p>
+        <p>Le site prend en charge trois langues : français, anglais et arabe, en utilisant un paramètre d’URL (<code>?lang=</code>) pour le changement de langue.</p>
+        <p>Les métadonnées sont intégrées au format RDFa avec le vocabulaire de schema.org pour décrire l’auteur.</p>
+        <p>Un exemple d’utilisation SPARQL ou XSLT peut être ajouté pour démontrer la maîtrise du web sémantique.</p>
+        <p>Un fichier <code>readme.php</code> est également disponible pour résumer les fichiers, les technologies utilisées et les exemples SPARQL/XSLT. Il est accessible librement depuis la racine du site.</p>
+      </paragraphes>
+      <titreSparql>Exemple RDF/SPARQL</titreSparql>
+      <lienRdf>Voir le fichier RDF global (contenu.rdf)</lienRdf>
+      <texteSparql>Dans la page sparql.php, je lis un fichier RDF qui décrit mes passions en utilisant le vocabulaire schema.org. Chaque passion est un objet avec un nom (label), une description et une catégorie. La lecture du fichier est réalisée en PHP comme une simulation de requête SPARQL, ce qui permet d'afficher dynamiquement les informations.</texteSparql>
+      <lienSparql>Voir l’exemple SPARQL →</lienSparql>
+      <titreXslt>Exemple de transformation XSLT</titreXslt>
+      <texteXslt>Dans la page <code>projets_xslt.php</code>, j’utilise un fichier <code>projets.xml</code> pour décrire mes projets, et je l’affiche dynamiquement avec une feuille de style <code>XSLT</code>. Cette transformation convertit les données XML en HTML, en parcourant les projets avec <code>&lt;xsl:for-each&gt;</code> et en appliquant du style CSS. Cela montre l’utilisation de XSLT pour le web sémantique.</texteXslt>
+      <lienXslt>Voir l’exemple XSLT →</lienXslt>
+      <titreXsd>Validation XML avec XSD</titreXsd>
+      <texteXsd>J’ai créé un fichier <code>XSD</code> pour décrire la structure attendue de mon fichier <code>projets.xml</code>. Il garantit que chaque projet contient un titre, une image, une description et une liste de technologies. Cela permet de valider la conformité du fichier XML avant de le transformer avec XSLT.</texteXsd>
+    </apropos>
+
+  </profil>
+
+  <profil lang="en">
+    <nom>Fatimazahra EL YOUNOUSSI</nom>
+    <ville>Paris, France</ville>
+    <email>fz.elyounoussi@gmail.com</email>
+    <presentation>My name is Fatimazahra EL YOUNOUSSI. I am currently a second-year engineering student at Sup Galilée and a full-stack developer apprentice at Dassault Systèmes...</presentation>
+
+    <competences>
+      <competence>HTML</competence>
+      <competence>CSS</competence>
+      <competence>C++</competence>
+      <competence>Haskell</competence>
+      <competence>C</competence>
+      <competence>Python</competence>
+      <competence>JavaScript</competence>
+      <competence>PHP</competence>
+      <competence>MySQL</competence>
+      <competence>Cisco</competence>
+      <competence>Java</competence>
+      <competence>UML</competence>
+    </competences>
+
+    <passions>
+      <passion id="insta">I share moments from my life and cute little things on social media like Instagram and TikTok.</passion>
+      <passion id="matcha">Matcha is a drink I have every day. It’s more than just a beverage — it’s a ritual for me.</passion>
+      <passion id="books">I read everything from novels to essays, and I’m especially into true crime stories like the series 'The Fear'.</passion>
+      <passion id="travel">I’ve visited Canada, Italy, Germany, Spain, Turkey, the UK, and the Netherlands.</passion>
+      <passion id="yoga">I practice yoga. It helps me focus and push my limits.</passion>
+    </passions>
+
+    <projets>
+      <projet id="cinetica">
+        <titre>Cinetica 🎬</titre>
+        <description>Cinetica is a web app to explore movies and TV shows. It fetches cast, posters, descriptions, and release dates from an external API (JSON via REST). I built it using TypeScript, Node.js, and modern frontend tools.</description>
+        <technos>TypeScript, Node.js, REST API, JSON</technos>
+        <images>
+          <img>images/login.png</img>
+          <img>images/discoverPage.png</img>
+          <img>images/detailsPage.png</img>
+        </images>
+      </projet>
+    </projets>
+
+    <contact>
+      <titre>Contact Me</titre>
+      <labels>
+        <nom>Name</nom>
+        <email>Email</email>
+        <message>Message</message>
+        <envoyer>Send</envoyer>
+      </labels>
+      <confirmation>Thank you {nom}, your message has been sent!</confirmation>
+    </contact>
+
+    <apropos>
+      <titre>About this website</titre>
+      <paragraphes>
+        <p>This portfolio was built using HTML5, CSS3, and PHP, with XML used to store multilingual content.</p>
+        <p>The website supports three languages: French, English, and Arabic, using a URL parameter (<code>?lang=</code>) to switch between them.</p>
+        <p>Metadata is embedded using RDFa format with the schema.org vocabulary to describe the author.</p>
+        <p>An example of SPARQL or XSLT usage can be added to demonstrate semantic web skills.</p>
+        <p>A <code>readme.php</code> file is also available to summarize the project’s structure, technologies used, and SPARQL/XSLT examples. It is accessible from the site’s root directory.</p>
+      </paragraphes>
+      <titreSparql>RDF/SPARQL Example</titreSparql>
+      <lienRdf>View the global RDF file (contenu.rdf)</lienRdf>
+      <texteSparql>In the page sparql.php, I read an RDF file that describes my passions using the schema.org vocabulary. Each passion is an object with a name (label), a description, and a category. The file is read in PHP as a simulated SPARQL query to dynamically display the data.</texteSparql>
+      <lienSparql>View SPARQL Example →</lienSparql>
+      <titreXslt>XSLT Transformation Example</titreXslt>
+      <texteXslt>In the <code>projets_xslt.php</code> page, I use a <code>projets.xml</code> file to describe my projects, and display them dynamically using an <code>XSLT</code> stylesheet. The transformation turns XML data into styled HTML by looping through projects with <code>&lt;xsl:for-each&gt;</code>. This demonstrates the use of XSLT for semantic web processing.</texteXslt>
+      <lienXslt>View XSLT Example →</lienXslt>
+      <titreXsd>XML Validation with XSD</titreXsd>
+      <texteXsd>I created an <code>XSD</code> file to describe the expected structure of my <code>projets.xml</code> file. It ensures that each project includes a title, image, description, and technologies. This is useful to validate the XML before transforming it using XSLT.</texteXsd>
+    </apropos>
+  </profil>
+
+  <profil lang="ar">
+    <nom>فاطمة الزهراء الينوسي</nom>
+    <ville>باريس، فرنسا</ville>
+    <email>fz.elyounoussi@gmail.com</email>
+    <presentation>اسمي فاطمة الزهراء الينوسي، أنا حالياً طالبة في السنة الثانية في مدرسة المهندسين Sup Galilée، ومتدربة كمطورة Full Stack في شركة Dassault Systèmes...</presentation>
+
+    <competences>
+      <competence>HTML</competence>
+      <competence>CSS</competence>
+      <competence>C++</competence>
+      <competence>هاسكل</competence>
+      <competence>C</competence>
+      <competence>بايثون</competence>
+      <competence>جافاسكريبت</competence>
+      <competence>PHP</competence>
+      <competence>MySQL</competence>
+      <competence>سيسكو</competence>
+      <competence>جافا</competence>
+      <competence>UML</competence>
+    </competences>
+
+    <passions>
+      <passion id="insta">أنشر لحظات من حياتي وأشياء لطيفة على وسائل التواصل الاجتماعي مثل إنستغرام وتيك توك.</passion>
+      <passion id="matcha">الماتشا هو مشروبي اليومي. إنه أكثر من مجرد مشروب، إنه طقس يومي بالنسبة لي.</passion>
+      <passion id="books">أقرأ كل شيء من الروايات إلى المقالات، وأحب بشكل خاص قصص الجريمة الحقيقية مثل سلسلة 'The Fear'.</passion>
+      <passion id="travel">زرت كندا، إيطاليا، ألمانيا، إسبانيا، تركيا، المملكة المتحدة وهولندا.</passion>
+      <passion id="yoga">أنا أمارس اليوغا. إنها تساعدني على التركيز وتجاوز حدودي.</passion>
+    </passions>
+
+    <projets>
+      <projet id="cinetica">
+        <titre>Cinetica 🎬</titre>
+        <description>Cinetica هو تطبيق ويب لاكتشاف الأفلام والمسلسلات. يعرض معلومات مثل الطاقم، الملصقات، الوصف، وتواريخ الإصدار، ويتم جلب البيانات من واجهة API باستخدام JSON. استخدمت فيه TypeScript وNode.js وأدوات حديثة للواجهة الأمامية.</description>
+        <technos>TypeScript, Node.js, REST API, JSON</technos>
+        <images>
+          <img>images/login.png</img>
+          <img>images/discoverPage.png</img>
+          <img>images/detailsPage.png</img>
+        </images>
+      </projet>
+    </projets>
+
+    <contact>
+      <titre>اتصل بي</titre>
+      <labels>
+        <nom>الاسم</nom>
+        <email>البريد الإلكتروني</email>
+        <message>الرسالة</message>
+        <envoyer>إرسال</envoyer>
+      </labels>
+      <confirmation>شكراً لك {nom}، تم إرسال رسالتك بنجاح!</confirmation>
+    </contact>
+
+    <apropos>
+      <titre>حول هذا الموقع</titre>
+      <paragraphes>
+        <p>تم إنشاء هذا الموقع باستخدام HTML5 وCSS3 وPHP، ويستخدم XML لتخزين المحتوى متعدد اللغات.</p>
+        <p>يدعم الموقع ثلاث لغات: الفرنسية، الإنجليزية، والعربية، ويستخدم معامل في الرابط (<code>?lang=</code>) لتغيير اللغة.</p>
+        <p>يتم تضمين البيانات الوصفية باستخدام تنسيق RDFa مع مفردات schema.org لوصف صاحب الموقع.</p>
+        <p>يمكن إضافة مثال باستخدام SPARQL أو XSLT لإظهار التمكن من تقنيات الويب الدلالي.</p>
+        <p>يتوفر أيضًا ملف <code>readme.php</code> يلخص بنية المشروع والتقنيات المستخدمة وأمثلة SPARQL/XSLT. يمكن الوصول إليه من مجلد الجذر للموقع.</p>
+      </paragraphes>
+      <titreSparql>مثال RDF/SPARQL</titreSparql>
+      <lienRdf>عرض ملف RDF العام (contenu.rdf)</lienRdf>
+      <texteSparql>في صفحة sparql.php، أقرأ ملف RDF يصف اهتماماتي باستخدام مفردات schema.org. كل اهتمام هو كائن يحتوي على اسم ووصف وفئة. يتم قراءة الملف باستخدام PHP كمحاكاة لاستعلام SPARQL لعرض البيانات بشكل ديناميكي.</texteSparql>
+      <lienSparql>عرض مثال SPARQL →</lienSparql>
+      <titreXslt>مثال تحويل XSLT</titreXslt>
+      <texteXslt>في صفحة <code>projets_xslt.php</code>، أستخدم ملف <code>projets.xml</code> لوصف مشاريعي، وأقوم بعرضها بشكل ديناميكي باستخدام ملف تنسيق <code>XSLT</code>. يقوم هذا التحويل بتحويل بيانات XML إلى HTML منسق باستخدام <code>&lt;xsl:for-each&gt;</code>. هذا يوضح استخدام XSLT في تطبيقات الويب الدلالي.</texteXslt>
+      <lienXslt>عرض مثال XSLT →</lienXslt>
+      <titreXsd>التحقق من XML باستخدام XSD</titreXsd>
+      <texteXsd>أنشأت ملف <code>XSD</code> لوصف البنية المتوقعة لملف <code>projets.xml</code>. يضمن أن يحتوي كل مشروع على عنوان وصورة ووصف وتقنيات مستخدمة. هذا مفيد للتحقق من صحة الملف قبل تحويله باستخدام XSLT.</texteXsd>
+
+    </apropos>
+  </profil>
+</portfolio>
