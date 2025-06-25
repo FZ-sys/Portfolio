@@ -36,9 +36,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 </head>
 <body typeof="schema:ContactPage">
     <div class="lang-switch">
-        <a href="?lang=fr">🇫🇷</a>
-        <a href="?lang=en">🇬🇧</a>
-        <a href="?lang=ar">🇸🇦</a>
+        <a href="?lang=fr">Français</a>
+        <a href="?lang=en">English</a>
+        <a href="?lang=ar">العربية</a>
     </div>
 
     <nav>

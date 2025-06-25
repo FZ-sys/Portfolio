@@ -74,53 +74,6 @@
                   </xs:sequence>
                 </xs:complexType>
               </xs:element>
-              <xs:element name="apropos">
-                <xs:complexType>
-                  <xs:sequence>
-                    <xs:element name="titre" type="xs:string"/>
-                    <xs:element name="paragraphes">
-                      <xs:complexType>
-                        <xs:sequence>
-                          <xs:element name="p" maxOccurs="unbounded">
-                            <xs:complexType mixed="true">
-                              <xs:sequence minOccurs="0" maxOccurs="unbounded">
-                                <xs:any processContents="lax"/>
-                              </xs:sequence>
-                            </xs:complexType>
-                          </xs:element>
-                        </xs:sequence>
-                      </xs:complexType>
-                    </xs:element>
-                    <xs:element name="titreSparql" type="xs:string"/>
-                    <xs:element name="lienRdf" type="xs:string"/>
-                    <xs:element name="texteSparql">
-                      <xs:complexType mixed="true">
-                        <xs:sequence minOccurs="0" maxOccurs="unbounded">
-                          <xs:any processContents="lax"/>
-                        </xs:sequence>
-                      </xs:complexType>
-                    </xs:element>
-                    <xs:element name="lienSparql" type="xs:string"/>
-                    <xs:element name="titreXslt" type="xs:string"/>
-                    <xs:element name="texteXslt">
-                      <xs:complexType mixed="true">
-                        <xs:sequence minOccurs="0" maxOccurs="unbounded">
-                          <xs:any processContents="lax"/>
-                        </xs:sequence>
-                      </xs:complexType>
-                    </xs:element>
-                    <xs:element name="lienXslt" type="xs:string"/>
-                    <xs:element name="titreXsd" type="xs:string"/>
-                    <xs:element name="texteXsd">
-                      <xs:complexType mixed="true">
-                        <xs:sequence minOccurs="0" maxOccurs="unbounded">
-                          <xs:any processContents="lax"/>
-                        </xs:sequence>
-                      </xs:complexType>
-                    </xs:element>
-                  </xs:sequence>
-                </xs:complexType>
-              </xs:element>
             </xs:sequence>
             <xs:attribute name="lang" type="xs:string" use="required"/>
           </xs:complexType>

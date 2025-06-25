@@ -10,7 +10,6 @@
     <a href="index.php?lang=<?= $lang ?>" property="schema:relatedLink">Accueil</a>
     <a href="passions.php?lang=<?= $lang ?>" property="schema:relatedLink">Passions</a>
     <a href="projet.php?lang=<?= $lang ?>" property="schema:relatedLink">Projets</a>
-    <a href="apropos.php?lang=<?= $lang ?>" property="schema:relatedLink">À propos</a>
     <a href="contact.php?lang=<?= $lang ?>" property="schema:relatedLink">Contact</a>
     <a href="readme.php?lang=<?= $lang ?>" target="_blank" property="schema:relatedLink">README</a>
 </nav>
